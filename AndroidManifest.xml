@@ -13,6 +13,10 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+    
+        Modified and Licensed under GPL v3 by Samuel Landete Benavente under the approval of Rodrigo Damasio de Moura,
+    who adapted the GDDSched in the first place for Brasil's Campus Party 2011. Samuel Landete just translated and adapted
+    Rodrigo's application "Campus Party 2011 BR" for Spain's Campus Party 2011.
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
