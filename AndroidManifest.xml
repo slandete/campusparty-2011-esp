@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2010 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.slandete.android.apps.campussched" android:versionName="3.2" android:versionCode="5">
+
+    <uses-sdk
+        android:targetSdkVersion="8" android:minSdkVersion="6"/>
+
+    <permission
+        android:protectionLevel="normal" android:label="@string/permission_write" android:description="@string/permission_write" android:name="com.slandete.android.apps.campussched.es.permission.WRITE_SCHEDULE"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:debuggable="false">
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher" android:name="com.slandete.android.apps.campussched.es.ui.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/title_schedule" android:name="com.slandete.android.apps.campussched.es.ui.ScheduleActivity"/>
+
+        <activity
+            android:theme="@style/Theme.IOSched" android:name="com.slandete.android.apps.campussched.es.ui.BlocksActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- TODO: remove default? -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.campussched.block" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/title_tracks" android:name="com.slandete.android.apps.campussched.es.ui.TracksActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.campussched.track" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched" android:name="com.slandete.android.apps.campussched.es.ui.TrackDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.campussched.track" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/title_sessions" android:name="com.slandete.android.apps.campussched.es.ui.SessionsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.campussched.session" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched" android:name="com.slandete.android.apps.campussched.es.ui.SessionDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.campussched.session" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/title_vendors" android:name="com.slandete.android.apps.campussched.es.ui.VendorsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.campussched.vendor" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched" android:name="com.slandete.android.apps.campussched.es.ui.VendorDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.campussched.vendor" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/title_notes" android:name="com.slandete.android.apps.campussched.es.ui.NotesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.campussched.note" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/title_note_edit"
+            android:windowSoftInputMode="adjustResize" android:name="com.slandete.android.apps.campussched.es.ui.NoteEditActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.campussched.note" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.campussched.note" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/title_map"
+            android:configChanges="orientation|keyboardHidden" android:name="com.slandete.android.apps.campussched.es.ui.MapActivity"/>
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/title_starred" android:name="com.slandete.android.apps.campussched.es.ui.StarredActivity"/>
+
+        <activity
+            android:theme="@style/Theme.IOSched"
+            android:label="@string/title_search"
+            android:launchMode="singleTop" android:name="com.slandete.android.apps.campussched.es.ui.SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data android:name="android.app.default_searchable" android:value="com.slandete.android.apps.campussched.es.ui.SearchActivity"/>
+
+        <service android:name="com.slandete.android.apps.campussched.es.service.SyncService"/>
+
+        <provider
+            android:name="com.slandete.android.apps.campussched.es.provider.ScheduleProvider" android:writePermission="com.slandete.android.apps.campussched.es.permission.WRITE_SCHEDULE" android:authorities="com.slandete.android.apps.campussched.es"/>
+
+
+		<!-- Broadcast Receiver that will process AppWidget updates --><!--
+		<receiver android:name="com.kupriyanov.android.apps.gddsched.de.ui.CountdownWidget" android:label="@string/widget_name">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_countdown_info" />
+		</receiver>
+
+		--><!-- Service to perform web API queries -->
+		<!--<service android:name="com.kupriyanov.android.apps.gddsched.de.ui.CountdownWidget$UpdateService" />-->
+		
+
+    </application>
+</manifest>
