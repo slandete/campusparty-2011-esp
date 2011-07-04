@@ -13,7 +13,7 @@ public class Setup {
 	 * @link https://spreadsheets.google.com/ccc?key=0Akgh73WhU1qHdHJmSUlSb0JIckowX1ZiQkhsYmdkdkE&hl=en&authkey=CIaKgpcD
 	 *
 	 * or from templates gallery
-	 * 
+	 * search 0Akgh73WhU1qHdHJmSUlSb0JIckowX1ZiQkhsYmdkdkE
 	 * @link https://docs.google.com/templates?q=gddsched&sort=hottest&view=author
 	 */
 
@@ -58,7 +58,7 @@ public class Setup {
 	
 	
 	;
-	public static final int VER_SESSION_HASHTAG = 27;
+	public static final int VER_SESSION_HASHTAG = 28;
 	
 
 }
