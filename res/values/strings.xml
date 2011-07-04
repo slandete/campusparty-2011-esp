@@ -24,12 +24,12 @@
     <string name="description_refresh">Refrescar</string>
     <string name="description_share">Compartir</string>
     <string name="description_export">Exportar</string>
-    <string name="description_star">Marcar</string>
+    <string name="description_star">Marcar como favorito</string>
 
     <string name="title_now_playing">Ahora</string>
     <string name="title_schedule">Agenda</string>
     <string name="title_sessions">Sesiones</string>
-    <string name="title_starred">Marcados</string>
+    <string name="title_starred">Favoritos</string>
     <string name="title_tracks">Etiquetas</string>
     <string name="title_vendors">Sandbox</string>
     <string name="title_map">Mapa</string>
@@ -47,7 +47,7 @@
     <string name="btn_schedule">Agenda</string>
     <string name="btn_map">Mapa</string>
     <string name="btn_sessions">Sesiones</string>
-    <string name="btn_starred">Marcados</string>
+    <string name="btn_starred">Favoritos</string>
     <string name="btn_vendors">Sandbox</string>
     <string name="btn_notes">Mis notas</string>
 	<string name="btn_tv">CampusTV</string>
