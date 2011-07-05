@@ -53,7 +53,7 @@ public class ScheduleDatabase extends SQLiteOpenHelper {
     // NOTE: carefully update onUpgrade() when bumping database versions to make
     // sure user data is saved.
 
-    private static final int VER_LAUNCH = 18;
+    private static final int VER_LAUNCH = 28;
     private static final int VER_SESSION_HASHTAG = Setup.VER_SESSION_HASHTAG;
 
     private static final int DATABASE_VERSION = VER_SESSION_HASHTAG;
