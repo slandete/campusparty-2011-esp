@@ -17,8 +17,10 @@ public class Setup {
 	 * @link https://docs.google.com/templates?q=gddsched&sort=hottest&view=author
 	 */
 
-	/*public static final String WORKSHEETS_URL = "http://spreadsheets.google.com/feeds/worksheets/0AubAZvONZm3adHpoTzZYdE1ERDdjM3ZZR0haZElvSEE/public/basic"; */
-	public static final String WORKSHEETS_URL = "http://spreadsheets.google.com/feeds/worksheets/0AvaLBPt3XQmodFVkUTZJZm5yRUlGRXJRRExGR01GSkE/public/basic";
+	/*public static final String WORKSHEETS_URL = "http://spreadsheets.google.com/feeds/worksheets/0AubAZvONZm3adHpoTzZYdE1ERDdjM3ZZR0haZElvSEE/public/basic";*/ 
+/*	public static final String WORKSHEETS_URL = "http://spreadsheets.google.com/feeds/worksheets/0AvaLBPt3XQmodFVkUTZJZm5yRUlGRXJRRExGR01GSkE/public/basic";*/
+	/* ojo, al final la hoja de cálculo apunta a "Copy of LIVE SPREADSHEET - Campus Party 2011 18-23 de Janeiro - ..." */
+	public static final String WORKSHEETS_URL = "http://spreadsheets.google.com/feeds/worksheets/0AvaLBPt3XQmodDg5di00X1Y1eVdYZU5Gd2dnc0luMkE/public/basic";
 	public static final String EXTRA_STATUS_RECEIVER = "com.slandete.android.campussched.extra.STATUS_RECEIVER";
 	public static final TimeZone CONFERENCE_TIME_ZONE = TimeZone.getTimeZone("GMT+01:00");
 
