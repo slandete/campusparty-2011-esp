@@ -41,4 +41,7 @@
     <room><id>23</id><name>EducaParty</name><floor>2</floor></room>
     <room><id>24</id><name>Escenario Ciencia - Ágora</name><floor>2</floor></room>
     <room><id>25</id><name>Escenario Ciencia - Museo</name><floor>2</floor></room>
+    <room><id>26</id><name>Stand Bluevía</name><floor>2</floor></room>
+    <room><id>27</id><name>Stadium Juegos - Museo</name><floor>2</floor></room>
+    <room><id>28</id><name>Escenario Ocio Digital - Ágora</name><floor>2</floor></room>
 </rooms>
