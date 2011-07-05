@@ -20,7 +20,7 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.slandete.android.apps.campussched" android:versionName="3.2" android:versionCode="5">
+    package="com.slandete.android.apps.campussched" android:versionCode="6" android:versionName="Arreglada búsqueda, solucionados problemas con hora local">
 
     <uses-sdk
         android:targetSdkVersion="8" android:minSdkVersion="6"/>
